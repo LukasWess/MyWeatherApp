@@ -23,7 +23,7 @@ body {
   
   .weather-data {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
     height: 30vh;
     display: flex;
     flex-direction: column;
