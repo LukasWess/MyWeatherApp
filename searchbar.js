@@ -1,5 +1,4 @@
-require('dotenv').config();
-const apiKey = process.env.Google_API;
+const apiKeyGoogle = window.Google_API;
 
 
 function initAutocomplete() {
@@ -37,6 +36,6 @@ function initAutocomplete() {
 // Add your API key to the script source below
 // Replace YOUR_API_KEY with your actual API key
 const script = document.createElement("script");
-script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places&callback=initAutocomplete`;
+script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKeyGoogle}&libraries=places&callback=initAutocomplete`;
 script.defer = true;
 document.head.appendChild(script);

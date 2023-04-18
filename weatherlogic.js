@@ -1,6 +1,4 @@
-require('dotenv').config();
-const apiKey = process.env.OpenWeather_API;
-
+const apiKey = window.OpenWeather_API;
 // Functions
 async function fetchData(city) {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
