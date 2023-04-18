@@ -1,4 +1,5 @@
-const apiKey = "545b7a591c0b5c3e4fe0f05123f0345e";
+require('dotenv').config();
+const apiKey = process.env.OpenWeather_API;
 
 // Functions
 async function fetchData(city) {

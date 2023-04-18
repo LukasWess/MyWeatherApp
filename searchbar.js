@@ -1,3 +1,7 @@
+require('dotenv').config();
+const apiKey = process.env.Google_API;
+
+
 function initAutocomplete() {
   // Create the search box and link it to the UI element.
   const input = document.getElementById("pac-input");
@@ -33,6 +37,6 @@ function initAutocomplete() {
 // Add your API key to the script source below
 // Replace YOUR_API_KEY with your actual API key
 const script = document.createElement("script");
-script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyBlEVmAX9ku4iJGv4oWPbA8HCbto8dps0I&libraries=places&callback=initAutocomplete`;
+script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places&callback=initAutocomplete`;
 script.defer = true;
 document.head.appendChild(script);
