@@ -1,0 +1,3 @@
+window.OpenWeather_API='545b7a591c0b5c3e4fe0f05123f0345e';
+
+window.Google_API='AIzaSyBlEVmAX9ku4iJGv4oWPbA8HCbto8dps0I';
